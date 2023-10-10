@@ -1,0 +1,32 @@
+form{
+    label{
+        font-family: 'Dune';
+        color: $white;
+        font-size: 12px;
+    }
+
+    input, textarea{
+        background: transparent !important;
+        border: 1px solid $white;
+        border-radius: 0 !important;
+        color: $white !important;
+        font-family: 'Initia';
+    }
+
+    input:focus, textarea:focus{
+        border: 1px solid $colored !important;
+    }
+
+    button{
+        background: $black !important;
+        font-size: 12px !important;
+        font-family: 'Current' !important;
+        border: 1px $b-hover solid !important;
+        padding: 5px 10px !important;
+    }
+
+    button:hover{
+        border-color: $colored !important;
+        color: $colored !important;
+    }
+}

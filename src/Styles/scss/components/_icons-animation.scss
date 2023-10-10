@@ -1,0 +1,53 @@
+@mixin goesDown($color) {
+    transform: translateY(10px);
+    color: $color;
+}
+
+@keyframes spinAndDown {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(10px) rotate(360deg);
+    }
+}
+
+.react-icon:hover {
+    @include goesDown($react);
+}
+
+.icon{
+    transition: transform 0.5s;
+}
+
+.html-icon:hover{
+    @include goesDown($html);
+}
+
+.css-icon:hover{
+    @include goesDown($css);
+}
+
+.js-icon:hover{
+    @include goesDown($js);
+}
+
+.sass-icon:hover{
+    @include goesDown($sass);
+}
+
+.bootstrap-icon:hover{
+    @include goesDown($bootstrap);
+}
+
+.mui-icon:hover{
+    @include goesDown($mui);
+}
+
+.git-icon:hover{
+    @include goesDown($git);
+}
+
+.nav-circle{
+    font-size: 5px;
+}

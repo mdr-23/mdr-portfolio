@@ -1,0 +1,380 @@
+@font-face {
+  font-family: "Serpentine";
+  src: url("../.././Fonts/serpentine-yw3n3.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Stretford";
+  src: url("../.././Fonts/stretford7-lgy7w.otf") format("truetype");
+}
+@font-face {
+  font-family: "Helsa";
+  src: url("../.././Fonts/helsa-display-regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "Incognito";
+  src: url("../.././Fonts/incognito-pro.otf") format("truetype");
+}
+@font-face {
+  font-family: "Current";
+  src: url("../.././Fonts/current-regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "Dune";
+  src: url("../.././Fonts/dune-rise.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Paperclip";
+  src: url("../.././Fonts/paperclipsansserif.otf") format("truetype");
+}
+@font-face {
+  font-family: "Mladen Bold";
+  src: url("../.././Fonts/mladen-bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mladen";
+  src: url("../.././Fonts/mladen.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Hitch Hiked";
+  src: url("../.././Fonts/hitch-hiked.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Initia";
+  src: url("../.././Fonts/initiasans-regular.ttf") format("truetype");
+}
+h1 {
+  color: #f5f5f5;
+  font-family: "Mladen Bold";
+  font-size: 45px;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #f5f5f5;
+  font-family: "Mladen Bold";
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  color: #f5f5f5;
+  font-family: "Dune";
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  color: #f5f5f5;
+  font-family: "Stretford";
+  font-size: 24px !important;
+  margin: 0;
+  padding: 0;
+}
+
+h6 {
+  color: #f5f5f5 !important;
+  font-family: "Mladen Bold";
+  font-size: 18px !important;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  color: #f5f5f5;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Current";
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+.nav-link {
+  color: #f5f5f5;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Current";
+  font-size: 12px;
+}
+
+.nav-link:focus {
+  color: #f5f5f5;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Current";
+  font-size: 12px;
+}
+
+.nav-focus {
+  color: #c5c5c5;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Current";
+  font-size: 12px;
+  text-decoration: dotted;
+}
+
+.nav-link:hover {
+  color: #c5c5c5;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Current";
+  font-size: 12px;
+}
+
+p {
+  color: #f5f5f5;
+  font-size: 15px;
+  padding: 0;
+  font-family: "Initia";
+  text-align: justify;
+}
+
+.stack-icons {
+  color: #f5f5f5;
+  font-size: 35px;
+  padding: 0;
+  font-family: "Initia";
+  border-top: 1px solid #f5f5f5;
+}
+
+.date {
+  color: #c5c5c5 !important;
+  font-size: 14px !important;
+  padding: 0;
+  font-family: "Initia";
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  padding: 0px;
+  border: 1px solid #f5f5f5;
+  width: 44rem;
+  height: 18.1rem;
+  background: #020202;
+  margin-right: 50px;
+}
+
+section .content {
+  max-width: 800px;
+  animation: glitch 0.1s linear 2 alternate both;
+}
+
+.extreme-glitch {
+  animation: infiniteGlitch 0.1s linear infinite;
+}
+
+section .projects-card {
+  animation: glitch 0.1s linear 2 alternate both;
+}
+
+section .projects-card h5, section .projects-card h6, section .projects-card p, section .projects-card a {
+  animation: glitch 0.6s linear infinite;
+}
+
+@keyframes glitch {
+  0%, 100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  2%, 64% {
+    transform: translate(4px, 0) skew(10deg);
+    opacity: 0.2;
+  }
+  4%, 60% {
+    transform: translate(-4px, 0) skew(-10deg);
+    opacity: 0.7;
+  }
+  62% {
+    transform: translate(0, 0) skew(15deg);
+    opacity: 0.2;
+  }
+}
+@keyframes infiniteGlitch {
+  0%, 100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  50%, 64% {
+    transform: translate(4px, 0) skew(10deg);
+    opacity: 0.2;
+  }
+  80%, 60% {
+    transform: translate(-4px, 0) skew(-10deg);
+    opacity: 0.7;
+  }
+  90% {
+    transform: translate(0, 0) skew(15deg);
+    opacity: 0.2;
+  }
+}
+@keyframes spinAndDown {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(10px) rotate(360deg);
+  }
+}
+.react-icon:hover {
+  transform: translateY(10px);
+  color: #61DBFB;
+}
+
+.icon {
+  transition: transform 0.5s;
+}
+
+.html-icon:hover {
+  transform: translateY(10px);
+  color: #F06529;
+}
+
+.css-icon:hover {
+  transform: translateY(10px);
+  color: #3C99DC;
+}
+
+.js-icon:hover {
+  transform: translateY(10px);
+  color: #F0DB4F;
+}
+
+.sass-icon:hover {
+  transform: translateY(10px);
+  color: #CD6799;
+}
+
+.bootstrap-icon:hover {
+  transform: translateY(10px);
+  color: #563d7c;
+}
+
+.mui-icon:hover {
+  transform: translateY(10px);
+  color: #5091D4;
+}
+
+.git-icon:hover {
+  transform: translateY(10px);
+  color: #F1502F;
+}
+
+.nav-circle {
+  font-size: 5px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #02020298;
+}
+
+.projects-cards-container a {
+  color: #c0470d;
+  text-decoration: none;
+  font-family: "Current";
+  font-size: 18px;
+}
+
+.btn:active {
+  background: transparent !important;
+}
+
+.pushable {
+  background: #020202;
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+
+.pushable:hover {
+  background: #020202;
+}
+
+.front {
+  display: block;
+  padding: 1px 14px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-family: "Initia";
+  background: #202020;
+  color: white;
+  transform: translateY(-6px);
+}
+
+.front-works {
+  display: block;
+  padding: 1px 14px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-family: "Initia";
+  background: #202020;
+  color: white;
+  transform: translateY(-6px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+  background: #020202 !important;
+}
+
+video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+section video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+form label {
+  font-family: "Dune";
+  color: #f5f5f5;
+  font-size: 12px;
+}
+form input, form textarea {
+  background: transparent !important;
+  border: 1px solid #f5f5f5;
+  border-radius: 0 !important;
+  color: #f5f5f5 !important;
+  font-family: "Initia";
+}
+form input:focus, form textarea:focus {
+  border: 1px solid #c0470d !important;
+}
+form button {
+  background: #020202 !important;
+  font-size: 12px !important;
+  font-family: "Current" !important;
+  border: 1px #202020 solid !important;
+  padding: 5px 10px !important;
+}
+form button:hover {
+  border-color: #c0470d !important;
+  color: #c0470d !important;
+}
+
+/*# sourceMappingURL=styles.css.map */

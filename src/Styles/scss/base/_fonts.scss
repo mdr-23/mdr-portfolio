@@ -1,0 +1,56 @@
+$font-path: "../.././Fonts/";
+
+@font-face {
+    font-family: 'Serpentine';
+    src: url('#{$font-path}serpentine-yw3n3.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'Stretford';
+    src: url('#{$font-path}stretford7-lgy7w.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Helsa';
+    src: url('#{$font-path}helsa-display-regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Incognito';
+    src: url('#{$font-path}incognito-pro.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Current';
+    src: url('#{$font-path}current-regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Dune';
+    src: url('#{$font-path}dune-rise.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Paperclip';
+    src: url('#{$font-path}paperclipsansserif.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Mladen Bold';
+    src: url('#{$font-path}mladen-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Mladen';
+    src: url('#{$font-path}mladen.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hitch Hiked';
+    src: url('#{$font-path}hitch-hiked.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Initia';
+    src: url('#{$font-path}initiasans-regular.ttf') format('truetype');
+}
