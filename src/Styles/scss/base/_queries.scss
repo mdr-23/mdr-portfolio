@@ -1,0 +1,81 @@
+@media only screen and (max-width: 767px){
+
+    .App{
+        height: 95vh;
+        margin: 20px;
+    }
+
+    .switch{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+
+        .switch-off{
+            font-size: 20px;
+        }
+    
+        .switch-on{
+            font-size: 20px;
+        }
+    }
+
+    h1{
+        font-size: 22px;
+    }
+
+    h2{
+        font-size: 14px;
+    }
+
+    h3{
+        font-size: 14px;
+    }
+
+    h5{
+        font-size: 18px !important;
+    }
+
+    h6{
+        font-size: 14px !important;
+    }
+
+    p{
+        font-size: 12px !important;
+    }
+
+    .work-p-mobile{
+        position: absolute;
+        margin-right: 15px;
+    }
+
+    section{
+        position: absolute;
+        top: 40%;
+        border: 1px solid $white;
+        width: 18rem;
+        height: 23.1rem;
+        background: $black;
+        margin-right: 15px;
+    }
+
+    .a-link{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px){
+    section{
+        position: absolute;
+        top: 40%;
+        border: 1px solid $white;
+        width: 30rem;
+        height: 26.1rem;
+        background: $black;
+        margin-right: 15px;
+    }
+
+    .work-p-mobile{
+        position: absolute;
+        margin-right: 30px;
+    }
+}

@@ -9,8 +9,6 @@
 @mixin lists($color){
     color: $color;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     font-family: 'Current';
     font-size: 12px;
 }
@@ -43,31 +41,34 @@ h6{
 }
 
 .nav{
-    @include lists($white);
-    margin-top: 50px
-}
+    margin-top: 50px;
+    padding: 0 !important;
+    position: relative;
 
-.nav-link{
-    @include lists($white);
-}
+    .nav-link{
+        @include lists($white);
+        padding: 0;
+        margin: 0;
+    }
 
-.nav-link:focus{
-    @include lists($white);
-}
+    .a-link{
+        color: $white !important;
+        text-decoration: none;
 
-.nav-focus{
-    @include lists($w-hover);
-    text-decoration:dotted;
-
-}
-
-.nav-link:hover{
-    @include lists($w-hover);
+        &:hover{
+            @include lists($w-hover !important);
+        }
+    }
 }
 
 p{
     @include paragraphs($white, 15px, 0);
     text-align: justify;
+}
+
+.work-p-mobile{
+    position: absolute;
+    margin-right: 30px;
 }
 
 .stack-icons{

@@ -52,11 +52,11 @@ const Navigation = () => {
             <h1>Martin del Rosario</h1>
             <h2>React Frontend developer</h2>
 
-            <ul className='nav d-block'>
-                <li><Link className='nav-link' onClick={handleHomeOn}>Home {homeOn ? <FaCircle className='nav-circle' /> : ""} </Link></li>
-                <li><Link className='nav-link mt-1' onClick={handleProjectsOn}>Projects {projectsOn ? <FaCircle className='nav-circle' /> : ""}</Link></li>
-                <li><Link className='nav-link mt-1' onClick={handleWorksOn}>Work Experience {worksOn ? <FaCircle className='nav-circle' /> : ""}</Link></li>
-                <li><Link className='nav-link mt-1' onClick={handleContactOn}>Contact {contactOn ? <FaCircle className='nav-circle' /> : ""}</Link></li>
+            <ul className='nav d-inline-block '>
+                <li className='nav-link'><Link className='a-link' onClick={handleHomeOn}>Home {homeOn ? <FaCircle className='nav-circle' /> : ""} </Link></li>
+                <li className='nav-link mt-1'><Link className='a-link' onClick={handleProjectsOn}>Projects {projectsOn ? <FaCircle className='nav-circle' /> : ""}</Link></li>
+                <li className='nav-link mt-1'><Link className='a-link' onClick={handleWorksOn}>Work Experience {worksOn ? <FaCircle className='nav-circle' /> : ""}</Link></li>
+                <li className='nav-link mt-1'><Link className='a-link' onClick={handleContactOn}>Contact {contactOn ? <FaCircle className='nav-circle' /> : ""}</Link></li>
             </ul>
         </>
     )

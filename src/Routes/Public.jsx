@@ -1,10 +1,17 @@
-import { Route, Routes } from "react-router-dom"
+import { useEffect } from "react"
+import { Route, Routes, useNavigate } from "react-router-dom"
 import Contact from "../Pages/Contact"
 import Home from "../Pages/Home"
 import Projects from "../Pages/Projects"
 import WorkExperience from "../Pages/WorkExperience"
 
 const Public = () => {
+
+    const navigate = useNavigate();
+
+    useEffect(() => {
+      navigate('/');
+    }, []);
 
     return(
         <Routes>

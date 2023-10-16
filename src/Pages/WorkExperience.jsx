@@ -29,10 +29,10 @@ const WorkExperience = () => {
     const workComponents = works.map(work =>
         <div className='mt-3' key={work.id}>
             
-            <h5 className='mb-2'>{work.title}</h5>
+            <h5 className='mb-2 work-h5-mobile'>{work.title}</h5>
             <h6 className="mb-4 date">{work.date}</h6>
             <h6 className="mb-4">{work.company}, {work.place}</h6>
-            <p>
+            <p className='work-p-mobile'>
                 {work.description}
             </p>
         </div>
@@ -51,8 +51,8 @@ const WorkExperience = () => {
 
             <div className='content'>
 
-                <Row className={videoVisible ? 'd-flex p-1 mx-3 extreme-glitch' : 'd-flex p-1 mx-3'}>
-                    <Col xs={10}>
+                <Row className={videoVisible ? 'd-flex p-0 p-sm-1 mx-2 mx-sm-3 extreme-glitch' : 'd-flex p-0 p-sm-1 mx-2 mx-sm-3'}>
+                    <Col xs={9}>
                         {workComponents[selectedIndex]}
                     </Col>
 
