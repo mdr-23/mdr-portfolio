@@ -35,7 +35,7 @@ const Projects = () => {
             )}
             {projectSelected && 
                 <>
-                    <video src={require("../Images/brokenscreen.mp4")} autoplay="true" muted="true" loop="true" />
+                    <video src={require("../Images/brokenscreen.mp4")} autoplay="true" muted="true" loop="true" playsInline />
                     <div className="overlay" />
                 </>
             }

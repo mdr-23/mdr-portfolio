@@ -46,6 +46,7 @@ const WorkExperience = () => {
                     autoPlay
                     muted
                     loop
+                    playsInline
                 />
             )}
 

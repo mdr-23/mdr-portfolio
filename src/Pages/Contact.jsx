@@ -26,6 +26,7 @@ const Contact = () => {
                     autoPlay
                     muted
                     loop
+                    playsInline
                 />
             )}
             

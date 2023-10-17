@@ -25,6 +25,7 @@ const Home = () => {
                     autoPlay
                     muted
                     loop
+                    playsInline
                 />
             )}
             <div className='content'>
