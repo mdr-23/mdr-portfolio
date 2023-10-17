@@ -29,11 +29,9 @@ const Contact = () => {
           });
       
           if (response.ok) {
-            // Si la respuesta es exitosa, navega a la ruta deseada
             navigate('/contact/email-submitted');
             setIsLoading(false);
           } else {
-            // Si hay un error en la respuesta, maneja el error según tu necesidad
             console.error('Error al enviar el formulario');
             setIsLoading(false);
           }
