@@ -58,7 +58,7 @@ const Contact = () => {
                         </Form.Group>
                     </Row>
 
-                    <Button variant="primary" type="submit">
+                    <Button variant="primary" type="submit" onClick={(e) => e.preventDefault()}>
                         Submit
                     </Button>
 
