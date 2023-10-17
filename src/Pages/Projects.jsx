@@ -31,11 +31,12 @@ const Projects = () => {
                     autoPlay
                     muted
                     loop
+                    playsInline
                 />
             )}
             {projectSelected && 
                 <>
-                    <video src={require("../Images/brokenscreen.mp4")} autoplay="true" muted="true" loop="true" playsInline />
+                    <video src={require("../Images/brokenscreen.mp4")} autoplay muted loop playsInline />
                     <div className="overlay" />
                 </>
             }
