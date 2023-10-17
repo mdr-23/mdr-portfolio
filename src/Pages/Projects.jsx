@@ -5,6 +5,7 @@ import { projects } from "../Utils/projects";
 const Projects = () => {
 
     const [videoVisible, setVideoVisible] = useState(true);
+    const [selectedButton, setSelectedButton] = useState(null);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -21,6 +22,7 @@ const Projects = () => {
     const handleProject = (selectedId) => {
         const project = projects.find(work => work.id === selectedId);
         setProjectSelected(project);
+        setSelectedButton(selectedId);
     }
 
     return (
@@ -36,7 +38,7 @@ const Projects = () => {
             )}
             {projectSelected && 
                 <>
-                    <video src={require("../Images/brokenscreen.mp4")} autoplay muted loop playsInline />
+                    <video src={require("../Images/brokenscreen.mp4")} autoPlay muted loop playsInline />
                     <div className="overlay" />
                 </>
             }
@@ -46,7 +48,12 @@ const Projects = () => {
                 <div className='projects-cards-container p-3'>
                     <div className={videoVisible ? 'd-flex extreme-glitch justify-content-center' : 'd-flex justify-content-center'}>
                         {projects.map(work =>
-                            <Button key={work.id} className='pushable mx-1' onClick={() => handleProject(work.id)}> <span className='front'>{work.id}</span></Button>
+                            <Button 
+                                key={work.id} className={projectSelected ? 'btn-section btn-projects mx-1' : 'btn-section mx-1'} 
+                                style={selectedButton === work.id ? { background: '#c0470d', color:'#fff' } : null}
+                                onClick={() => handleProject(work.id)}>
+                                <span>{work.id}</span>
+                            </Button>
                         )}
                     </div>
                     {projectSelected && (

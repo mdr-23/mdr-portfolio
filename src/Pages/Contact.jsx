@@ -36,7 +36,7 @@ const Contact = () => {
                         <Col>
                         <Form.Group className="mb-3" controlId="formBasicName">
                             <Form.Label>Name</Form.Label>
-                            <Form.Control type="text" placeholder="Enter your name" />
+                            <Form.Control name='name' type="text" placeholder="Enter your name" />
 {/*                             <Form.Text className="text-muted">
                             We'll never share your email with anyone else.
                             </Form.Text> */}
@@ -46,27 +46,23 @@ const Contact = () => {
                         <Col>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Email</Form.Label>
-                            <Form.Control type="email" placeholder="Enter your email" />
+                            <Form.Control name='email' type="email" placeholder="Enter your email" />
                         </Form.Group>
                         </Col>
                     </Row>
 
                     <Row>
-                    <Form.Group className="mb-3" controlId="formBasicMessage">
-                        <Form.Label>Message</Form.Label>
-                        <Form.Control type="text" required as="textarea" aria-label="With textarea" placeholder="Message" />
-                    </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicMessage">
+                            <Form.Label>Message</Form.Label>
+                            <Form.Control name='message' type="text" required as="textarea" aria-label="With textarea" placeholder="Message" />
+                        </Form.Group>
                     </Row>
-
-{/*                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                        <Form.Check type="checkbox" label="Check me out" />
-                    </Form.Group> */}
 
                     <Button variant="primary" type="submit">
                         Submit
                     </Button>
 
-                    <input type="hidden" name="_next" value="https://mdr-portfolio.onrender.com" />
+                    <input type="hidden" name="_next" value="https://mdr-portfolio.onrender.com/#/contact/email-submitted" />
                     <input type="hidden" name="_captcha" value="false" />
                     <input type="hidden" name="_template" value="table" />
                 </Form>

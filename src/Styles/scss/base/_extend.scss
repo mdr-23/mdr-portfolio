@@ -1,6 +1,6 @@
 %sections{
     position: absolute;
-    top: 48%;
+    top: 50%;
     right: 0;
     bottom: 0;
     padding: 0px;
@@ -82,6 +82,14 @@ section{
     }
 }
 
+.btn-projects{
+    @extend %screen;
+}
+
 .extreme-glitch{
     @extend %extremeGlitch;
+}
+
+.works-glitch{
+    animation: glitch 0.1s linear 2 alternate both;
 }

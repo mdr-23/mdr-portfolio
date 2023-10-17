@@ -61,6 +61,34 @@
     .a-link{
         font-size: 10px;
     }
+
+    .stack-icons{
+        font-size: 22px !important;
+    }
+
+    form{
+        label{
+            font-size: 10px !important;
+        }
+    
+        input, textarea{
+            font-size: 10px !important;
+        }
+    
+        textarea{
+            resize: none;
+            padding-bottom: 120px !important;
+        }
+    
+        button{
+            font-size: 10px !important;
+        }
+    
+        button:hover{
+            border-color: $colored !important;
+            color: $colored !important;
+        }
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px){

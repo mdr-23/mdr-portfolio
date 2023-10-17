@@ -1,4 +1,4 @@
-import {BrowserRouter as Router} from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 import Public from './Routes/Public';
 import Navigation from './Components/Navigation';
 import TVSwitcher from './Components/TVSwitcher';
@@ -11,10 +11,10 @@ function App() {
       <TVSwitcher>
         <video src={require('./Images/bg-home.mp4')} autoPlay muted loop playsInline />
         <div className='p-3 mt-5 p-sm-5'>
-          <Router className='AppContent'>
+          <HashRouter hashtype='hashbang' className='AppContent'>
             <Navigation />
             <Public />
-          </Router>
+          </HashRouter>
         </div>
       </TVSwitcher>
     </div>

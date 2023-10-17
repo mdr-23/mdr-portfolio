@@ -1,7 +1,7 @@
 .App {
   border: 1px solid #fff;
-  height: 82vh;
-  margin: 65px;
+  height: 92vh;
   position: relative;
   z-index: 1;
+  margin: 40px 40px 0 40px;
 }

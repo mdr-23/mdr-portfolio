@@ -11,10 +11,20 @@ form{
         border-radius: 0 !important;
         color: $white !important;
         font-family: 'Initia';
+
+        &::placeholder{
+            color: $c-hover !important;
+        }
+
+        &:focus{
+            border: 1px solid $colored !important;
+            outline: 10px solid $black !important;
+        }
     }
 
-    input:focus, textarea:focus{
-        border: 1px solid $colored !important;
+    textarea{
+        resize: none;
+        padding-bottom: 20px !important;
     }
 
     button{
@@ -28,5 +38,17 @@ form{
     button:hover{
         border-color: $colored !important;
         color: $colored !important;
+    }
+}
+
+.email-submitted{
+    h3{
+        color: $colored;
+    }
+
+    p{
+        padding: 0 !important;
+        text-align: center;
+        margin-top: 5px;
     }
 }

@@ -115,8 +115,8 @@ p {
 }
 
 .work-p-mobile {
-  position: absolute;
-  margin-right: 30px;
+  position: absolute !important;
+  margin-right: 30px !important;
 }
 
 .stack-icons {
@@ -136,7 +136,7 @@ p {
 
 section {
   position: absolute;
-  top: 48%;
+  top: 50%;
   right: 0;
   bottom: 0;
   padding: 0px;
@@ -160,7 +160,7 @@ section .projects-card {
   animation: glitch 0.1s linear 2 alternate both;
 }
 
-section .projects-card h5, section .projects-card h6, section .projects-card p, section .projects-card a {
+.btn-projects, section .projects-card h5, section .projects-card h6, section .projects-card p, section .projects-card a {
   animation: glitch 0.6s linear infinite;
 }
 
@@ -200,6 +200,10 @@ section .projects-card h5, section .projects-card h6, section .projects-card p, 
     opacity: 0.2;
   }
 }
+.works-glitch {
+  animation: glitch 0.1s linear 2 alternate both;
+}
+
 @keyframes spinAndDown {
   0% {
     transform: translateY(0) rotate(0deg);
@@ -272,48 +276,25 @@ section .projects-card h5, section .projects-card h6, section .projects-card p, 
   font-size: 18px;
 }
 
-.btn:active {
+.btn-section {
+  background: transparent;
+  border: 1px solid #202020;
+  color: #c0460d70;
+}
+.btn-section:hover {
+  border-color: #c0470d;
+  background: transparent;
+  color: #f5f5f5;
+}
+.btn-section:active {
+  border-color: #c0470d !important;
   background: transparent !important;
+  color: #f5f5f5;
 }
 
-.pushable {
+.works-btn button {
+  padding: 5px 5px;
   background: #020202;
-  border-radius: 12px;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  outline-offset: 4px;
-}
-
-.pushable:hover {
-  background: #020202;
-}
-
-.front {
-  display: block;
-  padding: 1px 14px;
-  border-radius: 12px;
-  font-size: 1.2rem;
-  font-family: "Initia";
-  background: #202020;
-  color: white;
-  transform: translateY(-6px);
-}
-
-.front-works {
-  display: block;
-  padding: 1px 14px;
-  border-radius: 12px;
-  font-size: 0.8rem;
-  font-family: "Initia";
-  background: #202020;
-  color: white;
-  transform: translateY(-6px);
-}
-
-.pushable:active .front {
-  transform: translateY(-2px);
-  background: #020202 !important;
 }
 
 video {
@@ -344,8 +325,16 @@ form input, form textarea {
   color: #f5f5f5 !important;
   font-family: "Initia";
 }
+form input::placeholder, form textarea::placeholder {
+  color: #c0460d70 !important;
+}
 form input:focus, form textarea:focus {
   border: 1px solid #c0470d !important;
+  outline: 10px solid #020202 !important;
+}
+form textarea {
+  resize: none;
+  padding-bottom: 20px !important;
 }
 form button {
   background: #020202 !important;
@@ -357,6 +346,15 @@ form button {
 form button:hover {
   border-color: #c0470d !important;
   color: #c0470d !important;
+}
+
+.email-submitted h3 {
+  color: #c0470d;
+}
+.email-submitted p {
+  padding: 0 !important;
+  text-align: center;
+  margin-top: 5px;
 }
 
 .switch {
@@ -526,6 +524,28 @@ input:checked ~ .cover:before {
 
   .a-link {
     font-size: 10px;
+  }
+
+  .stack-icons {
+    font-size: 22px !important;
+  }
+
+  form label {
+    font-size: 10px !important;
+  }
+  form input, form textarea {
+    font-size: 10px !important;
+  }
+  form textarea {
+    resize: none;
+    padding-bottom: 120px !important;
+  }
+  form button {
+    font-size: 10px !important;
+  }
+  form button:hover {
+    border-color: #c0470d !important;
+    color: #c0470d !important;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {

@@ -43,14 +43,14 @@ const Home = () => {
                 </h3>
 
                 <p className='stack-icons'>
-                    <FaReact className='mx-2 icon react-icon' />
-                    <FaHtml5 className='mx-2 icon html-icon'/>
-                    <FaCss3 className='mx-2 icon css-icon'/>
-                    <FaJs className='mx-2 icon js-icon'/>
-                    <FaSass className='mx-2 icon sass-icon'/>
-                    <FaBootstrap className='mx-2 icon bootstrap-icon'/>
-                    <SiMui className='mx-2 icon mui-icon'/>
-                    <FaGitAlt className='mx-2 icon git-icon'/>
+                    <FaReact className='mx-1 mx-sm-2 icon react-icon' />
+                    <FaHtml5 className='mx-1 mx-sm-2 icon html-icon'/>
+                    <FaCss3 className='mx-1 mx-sm-2 icon css-icon'/>
+                    <FaJs className='mx-1 mx-sm-2 icon js-icon'/>
+                    <FaSass className='mx-1 mx-sm-2 icon sass-icon'/>
+                    <FaBootstrap className='mx-1 mx-sm-2 icon bootstrap-icon'/>
+                    <SiMui className='mx-1 mx-sm-2 icon mui-icon'/>
+                    <FaGitAlt className='mx-1 mx-sm-2 icon git-icon'/>
                 </p>
                 </div>
             </div>

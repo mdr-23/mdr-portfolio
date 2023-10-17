@@ -29,10 +29,10 @@ const WorkExperience = () => {
     const workComponents = works.map(work =>
         <div className='mt-3' key={work.id}>
             
-            <h5 className='mb-2 work-h5-mobile'>{work.title}</h5>
-            <h6 className="mb-4 date">{work.date}</h6>
-            <h6 className="mb-4">{work.company}, {work.place}</h6>
-            <p className='work-p-mobile'>
+            <h5 className='mb-2 works-glitch work-h5-mobile'>{work.title}</h5>
+            <h6 className="mb-4 works-glitch date">{work.date}</h6>
+            <h6 className="mb-4 works-glitch">{work.company}, {work.place}</h6>
+            <p className='work-p-mobile works-glitch'>
                 {work.description}
             </p>
         </div>
@@ -59,9 +59,9 @@ const WorkExperience = () => {
 
                     <Col xs={2}>
                         <div className='p-3'>
-                            <div>
-                                <Button className='pushable mx-1' onClick={() => handleScroll("up")}> <span className='front-works'><FaUpLong /></span></Button>
-                                <Button className='pushable mx-1' onClick={() => handleScroll("down")}> <span className='front-works'><FaDownLong /></span></Button>
+                            <div className='works-btn'>
+                                <Button className='btn-section my-1 mx-1' onClick={() => handleScroll("up")}> <span className='front-works'><FaUpLong /></span></Button>
+                                <Button className='btn-section my-1 mx-1' onClick={() => handleScroll("down")}> <span className='front-works'><FaDownLong /></span></Button>
                             </div>
                         </div>
                     </Col>
