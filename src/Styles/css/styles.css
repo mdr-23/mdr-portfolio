@@ -564,5 +564,9 @@ input:checked ~ .cover:before {
     margin-right: 30px;
   }
 }
+.spinner {
+  font-size: 12px !important;
+  margin-left: 5px;
+}
 
 /*# sourceMappingURL=styles.css.map */

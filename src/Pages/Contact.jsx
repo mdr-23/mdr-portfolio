@@ -3,10 +3,45 @@ import { useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { useNavigate } from 'react-router-dom';
+import SpinnerLoader from '../Components/SpinnerLoader';
 
 const Contact = () => {
     
     const [videoVisible, setVideoVisible] = useState(true);
+    const [isLoading, setIsLoading] = useState(false)
+    const navigate = useNavigate()
+
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setIsLoading(true);
+      
+        const formData = new FormData(e.target);
+      
+        try {
+          const response = await fetch('https://formsubmit.co/delrosariomartin23@gmail.com', {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json'
+            },
+            body: formData
+          });
+      
+          if (response.ok) {
+            // Si la respuesta es exitosa, navega a la ruta deseada
+            navigate('/contact/email-submitted');
+            setIsLoading(false);
+          } else {
+            // Si hay un error en la respuesta, maneja el error según tu necesidad
+            console.error('Error al enviar el formulario');
+            setIsLoading(false);
+          }
+        } catch (error) {
+          console.error('Error al enviar el formulario', error);
+        }
+      };
+      
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -31,41 +66,38 @@ const Contact = () => {
             )}
             
             <div className='content'>
-                <Form className={videoVisible ? 'mt-2 extreme-glitch p-3' : 'mt-2 p-3'} action="https://formsubmit.co/delrosariomartin23@gmail.com" method="POST">
-                    <Row>
-                        <Col>
-                        <Form.Group className="mb-3" controlId="formBasicName">
-                            <Form.Label>Name</Form.Label>
-                            <Form.Control name='name' type="text" placeholder="Enter your name" />
-{/*                             <Form.Text className="text-muted">
-                            We'll never share your email with anyone else.
-                            </Form.Text> */}
-                        </Form.Group>                       
-                        </Col>
+            <Form className={videoVisible ? 'mt-2 extreme-glitch p-3' : 'mt-2 p-3'} onSubmit={handleSubmit}>
+                <Row>
+                    <Col>
+                    <Form.Group className="mb-3" controlId="formBasicName">
+                        <Form.Label>Name</Form.Label>
+                        <Form.Control name='name' type="text" placeholder="Enter your name" />
+                    </Form.Group>
+                    </Col>
 
-                        <Col>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Email</Form.Label>
-                            <Form.Control name='email' type="email" placeholder="Enter your email" />
-                        </Form.Group>
-                        </Col>
-                    </Row>
+                    <Col>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Email</Form.Label>
+                        <Form.Control name='email' type="email" placeholder="Enter your email" />
+                    </Form.Group>
+                    </Col>
+                </Row>
 
-                    <Row>
-                        <Form.Group className="mb-3" controlId="formBasicMessage">
-                            <Form.Label>Message</Form.Label>
-                            <Form.Control name='message' type="text" required as="textarea" aria-label="With textarea" placeholder="Message" />
-                        </Form.Group>
-                    </Row>
+                <Row>
+                    <Form.Group className="mb-3" controlId="formBasicMessage">
+                    <Form.Label>Message</Form.Label>
+                    <Form.Control name='message' type="text" required as="textarea" aria-label="With textarea" placeholder="Message" />
+                    </Form.Group>
+                </Row>
 
-                    <Button variant="primary" type="submit" onClick={(e) => e.preventDefault()}>
-                        Submit
-                    </Button>
+                <Button variant="primary" type="submit">
+                    Submit <SpinnerLoader loading={isLoading} />
+                </Button>
 
-                    <input type="hidden" name="_next" value="https://mdr-portfolio.onrender.com/#/contact/email-submitted" />
-                    <input type="hidden" name="_captcha" value="false" />
-                    <input type="hidden" name="_template" value="table" />
-                </Form>
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+            </Form>
+
             </div>
         </section>
     )
