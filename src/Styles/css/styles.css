@@ -534,14 +534,14 @@ input:checked ~ .cover:before {
     font-size: 10px !important;
   }
   form input, form textarea {
-    font-size: 10px !important;
+    font-size: 12px !important;
   }
   form textarea {
     resize: none;
     padding-bottom: 120px !important;
   }
   form button {
-    font-size: 10px !important;
+    font-size: 12px !important;
   }
   form button:hover {
     border-color: #c0470d !important;
