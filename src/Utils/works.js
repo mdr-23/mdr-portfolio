@@ -25,7 +25,7 @@ export const works = [
     },
     {
         id: 4,
-        title: 'Technical Service',
+        title: 'IT Support',
         date: '2022 - 2023',
         company: 'Sitel - PlayStation',
         place: 'Berlin, Germany - Remote',

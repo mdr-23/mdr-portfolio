@@ -26,7 +26,7 @@ const WorkExperience = () => {
         };
     }, []);
 
-    const workComponents = works.map(work =>
+    const workComponents = [...works].reverse().map(work =>
         <div className='mt-3' key={work.id}>
             
             <h5 className='mb-2 works-glitch work-h5-mobile'>{work.title}</h5>
