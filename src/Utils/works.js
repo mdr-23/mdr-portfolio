@@ -9,11 +9,11 @@ export const works = [
     },
     {
         id: 2,
-        title: 'Administrative employee - Frontend developer',
+        title: 'IT Support Technician - Frontend developer',
         date: '2014 - 2021',
         company: 'University of Buenos Aires',
         place: 'Buenos Aires, Argentina',
-        description: 'I worked as an administrative employee at the University of Buenos Aires for two years. Then from 2016 I was the operator of the GEDO, GDE and Comdoc systems and in 2021 I worked for six months on the website of the scholarship office as a frontend developer.',
+        description: 'I was the operator of the GEDO, GDE and Comdoc systems, providing IT support to the Scholarship Department. In 2021 I started to work as a frontend developer on the website of the same Department of the University.',
     },
     {
         id: 3,
@@ -25,7 +25,7 @@ export const works = [
     },
     {
         id: 4,
-        title: 'IT Support',
+        title: 'IT Support Technician',
         date: '2022 - 2023',
         company: 'Sitel - PlayStation',
         place: 'Berlin, Germany - Remote',
