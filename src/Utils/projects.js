@@ -28,6 +28,15 @@ export const projects = [
     },
     {
         id: 4,
+        name: 'EuroWert - Euro Exchange Converter',
+        company: 'EuroWert',
+        link: 'https://eurowert.onrender.com/',
+        gh: 'https://github.com/mdr-23/EuroWert',
+        text: 'EurWert is a a simple React app demonstrating real-time Euro to various currency exchange rates. This project serves as a showcase of React development skills, providing a straightforward way to check the current value of the Euro against different currencies.',
+        className: 'ds-bg'
+    },
+    {
+        id: 5,
         name: 'DualSense React App',
         company: 'UTN',
         link: 'https://dualsenseapp.onrender.com/',
